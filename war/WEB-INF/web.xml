@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+	<servlet>
+		<servlet-name>InkData</servlet-name>
+		<servlet-class>com.inkgps.project.InkDataServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>InkData</servlet-name>
+		<url-pattern>/inkdata</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>InkMultimedia</servlet-name>
+		<servlet-class>com.inkgps.project.MultimediaServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>InkMultimedia</servlet-name>
+		<url-pattern>/inkmultimedia</url-pattern>
+	</servlet-mapping>
+		<servlet>
+		<servlet-name>InkEventos</servlet-name>
+		<servlet-class>com.inkgps.project.EventosServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>InkEventos</servlet-name>
+		<url-pattern>/inkeventos</url-pattern>
+	</servlet-mapping>
+		<servlet>
+		<servlet-name>InkNoticias</servlet-name>
+		<servlet-class>com.inkgps.project.NoticiasServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>InkNoticias</servlet-name>
+		<url-pattern>/inknoticias</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	<servlet>
+		<servlet-name>InkPromociones</servlet-name>
+		<servlet-class>com.inkgps.project.PromocionesServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>InkPromociones</servlet-name>
+		<url-pattern>/inkpromociones</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	<servlet>
+		<servlet-name>InkBocetos</servlet-name>
+		<servlet-class>com.inkgps.project.BocetosServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>InkBocetos</servlet-name>
+		<url-pattern>/inkbocetos</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>InkPublicidad</servlet-name>
+		<servlet-class>com.inkgps.project.PublicidadServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>InkPublicidad</servlet-name>
+		<url-pattern>/inkpublicidad</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>ciudades</servlet-name>
+		<servlet-class>com.inkgps.project.CiudadServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ciudades</servlet-name>
+		<url-pattern>/ciudades</url-pattern>
+	</servlet-mapping>
+	
+		<servlet>
+		<servlet-name>estilos</servlet-name>
+		<servlet-class>com.inkgps.project.EstilosServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>estilos</servlet-name>
+		<url-pattern>/estilos</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+</web-app>
